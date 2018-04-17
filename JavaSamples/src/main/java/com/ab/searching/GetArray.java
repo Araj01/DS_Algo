@@ -17,6 +17,15 @@ public class GetArray {
 		return Double.valueOf((Math.random() * 10)).intValue()*Double.valueOf((Math.random() * 10)).intValue();
 	}
 	
-
+	public static Integer[] getUnsortedArray() {
+		Integer[] array = new Integer[20];
+		int j = 0;
+		while (j < 20) {
+			array[j] = (Double.valueOf((Math.random() * 10)).intValue() * 10) + Double.valueOf((Math.random() * 10)).intValue();
+			j++;
+		}
+		
+		return array;
+	}
 
 }
