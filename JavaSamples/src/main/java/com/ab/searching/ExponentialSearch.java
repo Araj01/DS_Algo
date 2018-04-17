@@ -3,13 +3,8 @@ package com.ab.searching;
 public class ExponentialSearch {
 
 	public static void main(String[] args) {
-		int[] array = new int[20];
-		int j = 0;
-		while (j < 20) {
-			array[j] = (j * 10) + Double.valueOf((Math.random() * 10)).intValue();
-			j++;
-		}
-		int x = Double.valueOf((Math.random() * 10)).intValue()*Double.valueOf((Math.random() * 10)).intValue();
+		int[] array = GetArray.getArray();
+		int x = GetArray.getElement();
 		search(array, x);
 	}
 	

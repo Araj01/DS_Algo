@@ -4,14 +4,8 @@ public class JumpSearch {
 
 	public static void main(String[] args) {
 
-		int[] array = new int[20];
-		int j = 0;
-		while (j < 20) {
-			array[j] = j;
-			j++;
-		}
-
-		int x = 15;
+		int[] array = GetArray.getArray();
+		int x = GetArray.getElement();
 		int length = array.length;
 		search(array, 0, Double.valueOf(Math.sqrt(length)).intValue(), x);
 

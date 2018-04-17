@@ -10,9 +10,9 @@ package com.ab.searching;
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int[] array = GetArray.getArray();
 		int length = array.length;
-		int x = 0;
+		int x = GetArray.getElement();
 		binarySearch(array, 0, length - 1, x);
 	}
 
