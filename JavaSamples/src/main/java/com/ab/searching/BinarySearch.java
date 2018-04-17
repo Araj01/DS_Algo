@@ -16,7 +16,7 @@ public class BinarySearch {
 		binarySearch(array, 0, length - 1, x);
 	}
 
-	private static void binarySearch(int[] array, int start, int end, int x) {
+	public static void binarySearch(int[] array, int start, int end, int x) {
 		if(x<array[0] || x>array[array.length-1]) {
 			System.out.println(x+" doesn't exist in the given array");
 			return;
