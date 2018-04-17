@@ -3,12 +3,12 @@ package com.ab.searching;
 public class ExponentialSearch {
 
 	public static void main(String[] args) {
-		int[] array = GetArray.getArray();
+		Integer[] array = GetArray.getArray();
 		int x = GetArray.getElement();
 		search(array, x);
 	}
 	
-	private static void search(int[] array, int x){
+	private static void search(Integer[] array, int x){
 		
 		if(x>array[array.length-1] || x<array[0])
 			System.out.println(x+ " is not present in the given array.");

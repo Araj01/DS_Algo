@@ -4,14 +4,14 @@ public class InterPolationSearch {
 
 	public static void main(String[] args) {
 
-		int[] array = GetArray.getArray();
+		Integer[] array = GetArray.getArray();
 		int x = GetArray.getElement();
 		//System.out.println(Arrays.toString(array));
 		System.out.println(x + " is found in array at index: "+search(array, x));
 
 	}
 
-	private static int search(int[] array, int element) {
+	private static int search(Integer[] array, int element) {
 
 		int start = 0;
 		int end = array.length - 1;
@@ -30,7 +30,7 @@ public class InterPolationSearch {
 		return -1;
 	}
 
-	private static int getPosition(int[] array, int start, int end, int element) {
+	private static int getPosition(Integer[] array, int start, int end, int element) {
 		return start + Double.valueOf((Integer.valueOf((end - start)).doubleValue()
 				/ Integer.valueOf((array[end] - array[start])).doubleValue()
 				* Integer.valueOf((element - array[start])).doubleValue())).intValue();

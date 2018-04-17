@@ -10,13 +10,13 @@ package com.ab.searching;
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[] array = GetArray.getArray();
+		Integer[] array = GetArray.getArray();
 		int length = array.length;
 		int x = GetArray.getElement();
 		binarySearch(array, 0, length - 1, x);
 	}
 
-	public static void binarySearch(int[] array, int start, int end, int x) {
+	public static void binarySearch(Integer[] array, int start, int end, int x) {
 		if(x<array[0] || x>array[array.length-1]) {
 			System.out.println(x+" doesn't exist in the given array");
 			return;

@@ -12,13 +12,13 @@ public class ReccursiveSearchInUnsortedArray {
 
 	public static void main(String[] args) {
 
-		int[] array = GetArray.getArray();
+		Integer[] array = GetArray.getArray();
 		int x = GetArray.getElement();
 		search(array, x, 0);
 
 	}
 
-	public static int search(int[] array, int x, int index) {
+	public static int search(Integer[] array, int x, int index) {
 
 		if (x == array[index]) {
 			return index;

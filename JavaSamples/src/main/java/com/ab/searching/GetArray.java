@@ -2,8 +2,8 @@ package com.ab.searching;
 
 public class GetArray {
 	
-	public static int[] getArray() {
-		int[] array = new int[20];
+	public static Integer[] getArray() {
+		Integer[] array = new Integer[20];
 		int j = 0;
 		while (j < 20) {
 			array[j] = (j * 10) + Double.valueOf((Math.random() * 10)).intValue();

@@ -4,14 +4,14 @@ public class JumpSearch {
 
 	public static void main(String[] args) {
 
-		int[] array = GetArray.getArray();
+		Integer[] array = GetArray.getArray();
 		int x = GetArray.getElement();
 		int length = array.length;
 		search(array, 0, Double.valueOf(Math.sqrt(length)).intValue(), x);
 
 	}
 
-	static void search(int[] array, int start, int end, int x) {
+	static void search(Integer[] array, int start, int end, int x) {
 
 		if (x < array[0] || x > array[array.length - 1]) {
 			System.out.println(x + " doesn't exist in the given array");
