@@ -3,8 +3,6 @@
  */
 package com.ab.searching.problems;
 
-import java.util.Arrays;
-
 import com.ab.searching.GetArray;
 
 /*
