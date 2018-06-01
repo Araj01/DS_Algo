@@ -21,7 +21,6 @@ public class MinimumSwaps {
 	}
 
 	static int[] getArray() {
-
 		n = sc.nextInt();
 		k = sc.nextInt();
 		int[] arr = new int[n];
@@ -29,7 +28,6 @@ public class MinimumSwaps {
 			arr[j] = sc.nextInt();
 
 		return arr;
-
 	}
 
 	static int count_min_swap(int[] arr) {
